@@ -166,7 +166,6 @@ body{
 .content-banner h2{
     color: #edcfad;
 }
-=======
 .gupter-regular {
     font-family: "Gupter", serif;
     font-weight: 400;
@@ -189,7 +188,7 @@ body{
 
 /*Estilizando o cabeçalho - parte de cima*/
 .container-hero{
-    background-color: rgb(245, 241, 220);
+    background-color: rgb(180, 154, 119);
 }
 
 .hero{
@@ -234,7 +233,7 @@ body{
 
 /*Estilizando NavBar - Menu*/
 .container-navbar{
-    background-color: rgb(124, 73, 6);
+    background-color: rgb(136, 118, 94);
 }
 .navbar{
     display: flex;
@@ -328,4 +327,25 @@ body{
     text-transform: uppercase;
     border-radius: 3rem;
 }
->>>>>>> 863865c95115ff914ce87cb4e942b90b43939184
+.content-banner h2{
+    color: #edcfad;
+}
+/*estlização da pág principal*/
+.main-content{
+    background-color: rgb(136, 118, 94);
+}
+.container-features{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    padding: 3rem 1rem;
+}
+.card-feature{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #74614c;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    width: 15rem;
+}
