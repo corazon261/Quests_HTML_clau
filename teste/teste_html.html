@@ -1,33 +1,32 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Padoca do Xúlio</title>
-    <script src="https://kit.fontawesome.com/40f99b97e8.js" 
-    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/40f99b97e8.js" crossorigin="anonymous"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='teste.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <!--Inicio Cabeçalho-->
+    <!-- Início do Cabeçalho -->
     <header>
         <div class="container-hero">
             <div class="container hero">
-                <!--Caixa suporte ao Cliente-->
-                <div class="costumer-support">
+                <!-- Caixa Suporte ao Cliente -->
+                <div class="customer-support">
                     <i class="fa-solid fa-headset"></i>
-                    <div class="content-costumer-support">
+                    <div class="content-customer-support">
                         <span class="text">Suporte ao Cliente</span>
                         <span class="number">+55 (11) 2335-7654</span>
                     </div>
                 </div>
                 
-                <!--Caixa Logo-->
+                <!-- Caixa Logo -->
                 <div class="container-logo">
                     <i class="fa-solid fa-mug-hot"></i>
                     <h1>
@@ -35,7 +34,7 @@
                     </h1>
                 </div>
 
-                <!--Caixa Usuário-->
+                <!-- Caixa Usuário e Carrinho -->
                 <div class="container-user">
                     <i class="fa-solid fa-user"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -46,7 +45,8 @@
                 </div>
             </div>
         </div>
-        <!--NavBar - Menu de Navegação-->
+        
+        <!-- Menu de Navegação -->
         <div class="container-navbar">
             <nav class="navbar container">
                 <ul class="menu">
@@ -63,39 +63,36 @@
                         <a href="#">Contato</a>
                     </li>
                 </ul>
-                <!--Campo de Pesquisa-->
-                <form class="search-form">
-                    <!--Campo de texto para pesquisar-->
-                    <input type="search" placeholder="Pesquisar...">
-                    <!--Botão de pesquisar com o ícone de lupa-->
-                    <button class="btn-search">
-                        <!--Ícone de pesquisa - Lupa-->
+                
+                <!-- Campo de Pesquisa -->
+                <form class="search-form" role="search">
+                    <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+                    <button type="submit" class="btn-search" aria-label="Buscar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-                <!--Fim formulário-->
             </nav>
         </div>
     </header>
-    <!--Fim do Cabeçalho-->
+    <!-- Fim do Cabeçalho -->
 
-    <!--Inicio Banner-->
-    <div class="banner">
+    <!-- Banner -->
+    <section class="banner">
         <div class="content-banner">
             <p>Diamba</p>
-            <h2>100% Natural <b>fresquinha</b></h2>
-            <a href="#">Comprar Agora</a>
+            <h2>100% Natural e <b>Fresquinha</b></h2>
+            <a href="#" class="btn-primary">Comprar Agora</a>
         </div>
-    </div>
+    </section>
+    <!-- Fim do Banner -->
 
-    <!--Principal-->
+    <!-- Conteúdo Principal -->
     <main class="main-content">
         <div class="container container-features">
-
             <div class="card-feature">
-                <i class="fa-solid fa-plane-up"></i>
+                <i class="fa-solid fa-shipping-fast"></i>
                 <div class="feature-content">
-                    <span>Enviamos diretamente para o seu barraco</span>
+                    <span>Enviamos diretamente para sua casa</span>
                     <p>Pedidos a partir de R$50</p>
                 </div>
             </div>
@@ -103,27 +100,58 @@
             <div class="card-feature">
                 <i class="fa-solid fa-wallet"></i>
                 <div class="feature-content">
-                    <span>Sem reembolsos</span>
-                    <p>Não tem garantia miseravel</p>
+                    <span>Pagamento Seguro</span>
+                    <p>Transações protegidas e confiáveis</p>
                 </div>
             </div>
 
             <div class="card-feature">
                 <i class="fa-solid fa-gift"></i>
                 <div class="feature-content">
-                    <span>Bonus a partir de 3 diambas</span>
-                    <p>Promoção relampago</p>
+                    <span>Bônus a partir de 3 compras</span>
+                    <p>Promoções imperdíveis</p>
                 </div>
             </div>
+            
             <div class="card-feature">
                 <i class="fa-solid fa-headset"></i>
                 <div class="feature-content">
-                    <span>Contato:</span>
-                    <p>Tio cariri</p>
+                    <span>Atendimento ao Cliente</span>
+                    <p>Suporte dedicado e rápido</p>
                 </div>
             </div>
         </div>
     </main>
+    <!-- Fim do Conteúdo Principal -->
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content container">
+                <div class="footer-section about">
+                    <h3>Sobre Nós</h3>
+                    <p>Na Padoca do Xúlio, oferecemos os melhores pães e doces artesanais com ingredientes de alta qualidade.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contato</h3>
+                    <p>+55 (11) 2335-7654</p>
+                    <p>email@padocadoxulio.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Padoca do Xúlio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim do Rodapé -->
     
 </body>
 </html>

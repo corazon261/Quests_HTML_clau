@@ -1,111 +1,103 @@
-
-.gupter-regular {
+/* Configurações Gerais */
+body {
     font-family: "Gupter", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-body{
-    font-family: "Gupter", "serif";
-}
-*{
+    background: linear-gradient(135deg, rgba(139,69,19, 0.9), rgba(85,37,13, 0.9)); /* Imagem de fundo */
     margin: 0;
     padding: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: ;
 }
 
 .container {
-	max-width: 120rem;
-	margin: 0 auto;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
-/*Estilizando o cabeçalho - parte de cima*/
-.container-hero{
+.container-hero {
     background-color: rgb(245, 241, 220);
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.3rem;
 }
-.costumer-support{
+
+.costumer-support {
     display: flex;
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
+
 .costumer-support i {
     font-size: 3.5rem;
 }
-.content-costumer-support{
+
+.content-costumer-support {
     display: flex;
     flex-direction: column;
 }
-.container-logo{
+
+.container-logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.container-logo i{
+
+.container-logo i {
     font-size: 3rem;
 }
 
-.container-logo a{
+.container-logo a {
     text-decoration: none;
+    color: inherit;
 }
 
-.container-user{
+.container-user {
     display: flex;
     gap: 1rem;
     cursor: pointer;
 }
-.container-user i{
+
+.container-user i {
     font-size: 1.5rem;
 }
 
-/*Estilizando NavBar - Menu*/
-.container-navbar{
+/* Estilização do Menu de Navegação */
+.container-navbar {
     background-color: rgb(124, 73, 6);
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 2rem;
 }
-.menu li{
+
+.menu li {
     list-style: none;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
-    font-size: 1em;
-    color: black;
+    font-size: 1rem;
+    color: #000;
     font-weight: 600;
     text-transform: uppercase;
-    position: relative;
 }
 
-.menu a::after{
-    content:'';
-    width: 1.8rem;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -0.3rem;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0;
-    transition: all 0.3s ease;
+.menu a:hover {
+    color: #fff;
 }
-.menu a:hover{
-    color: aliceblue;
-}
-.search-form{
+
+.search-form {
     display: flex;
     align-items: center;
     border: 2px solid #fff;
@@ -114,7 +106,8 @@ body{
     height: 2.4rem;
     overflow: hidden;
 }
-.search-form input{
+
+.search-form input {
     border: none;
     width: 20rem;
     font-size: 1.4rem;
@@ -123,7 +116,8 @@ body{
     cursor: pointer;
     outline: none;
 }
-.search-form .btn-search{
+
+.search-form .btn-search {
     border: none;
     background-color: #f4b46c;
     display: flex;
@@ -132,28 +126,33 @@ body{
     height: 100%;
     padding: 1rem;
 }
-.btn-search i{
+
+.btn-search i {
     font-size: 1.5rem;
     color: #fff;
 }
 
-.banner{
-    background-image: linear-gradient(100deg, #000,#00000020), url(/img/image\ \(1\).png);
+/* Estilização do Banner */
+.banner {
+    background-image: linear-gradient(100deg, #000, #00000020), url(/img/image\ \(1\).png);
     height: 40rem;
     background-size: cover;
     background-position: center;
 }
-.content-banner{
+
+.content-banner {
     color: #ccb8b8;
     max-width: 40rem;
-    
     margin-left: 1rem;
-    padding: 10rem;
     padding-top: 20rem;
     font-weight: 600;
-    
 }
-.content-banner a{
+
+.content-banner h2 {
+    color: #edcfad;
+}
+
+.content-banner a {
     margin-top: 2rem;
     text-decoration: none;
     color: #fff;
@@ -163,184 +162,20 @@ body{
     text-transform: uppercase;
     border-radius: 3rem;
 }
-.content-banner h2{
-    color: #edcfad;
-}
-.gupter-regular {
-    font-family: "Gupter", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
-body{
-    font-family: "Gupter", "serif";
-}
-*{
-    margin: 0;
-    padding: 0;
-	box-sizing: border-box;
-}
-
-.container {
-	max-width: 120rem;
-	margin: 0 auto;
-}
-
-/*Estilizando o cabeçalho - parte de cima*/
-.container-hero{
-    background-color: rgb(180, 154, 119);
-}
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.3rem;
-}
-.costumer-support{
-    display: flex;
-    align-items: center;
-    gap:1.5rem;
-}
-.costumer-support i {
-    font-size: 3.5rem;
-}
-.content-costumer-support{
-    display: flex;
-    flex-direction: column;
-}
-.container-logo{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-.container-logo i{
-    font-size: 3rem;
-}
-
-.container-logo a{
-    text-decoration: none;
-}
-
-.container-user{
-    display: flex;
-    gap: 1rem;
-    cursor: pointer;
-}
-.container-user i{
-    font-size: 1.5rem;
-}
-
-/*Estilizando NavBar - Menu*/
-.container-navbar{
+/* Estilização da Página Principal */
+.main-content {
     background-color: rgb(136, 118, 94);
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-.menu{
-    display: flex;
-    gap: 2rem;
-}
-.menu li{
-    list-style: none;
-}
-.menu a{
-    text-decoration: none;
-    font-size: 1em;
-    color: black;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: relative;
-}
-/*
-.menu a::after{
-    content:'';
-    width: 1.8rem;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    bottom: -0.3rem;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0;
-    transition: all 0.3s ease;
-}*/
-.menu a:hover{
-    color: aliceblue;
-}
-.search-form{
-    display: flex;
-    align-items: center;
-    border: 2px solid #fff;
-    border-radius: 2rem;
-    background-color: #fff;
-    height: 2.4rem;
-    overflow: hidden;
-}
-.search-form input{
-    border: none;
-    width: 20rem;
-    font-size: 1.4rem;
-    padding: 0 2rem;
-    color: #777;
-    cursor: pointer;
-    outline: none;
-}
-.search-form .btn-search{
-    border: none;
-    background-color: #f4b46c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 1rem;
-}
-.btn-search i{
-    font-size: 1.5rem;
-    color: #fff;
-}
 
-.banner{
-    background-image: linear-gradient(100deg, #000,#00000020), url(/img/image\ \(1\).png);
-    height: 40rem;
-    background-size: cover;
-    background-position: center;
-}
-.content-banner{
-    color: #0c0101;
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 25rem;
-    font-weight: 600;
-}
-.content-banner a{
-    margin-top: 2rem;
-    text-decoration: none;
-    color: #fff;
-    background-color: #777;
-    display: inline-block;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    border-radius: 3rem;
-}
-.content-banner h2{
-    color: #edcfad;
-}
-/*estlização da pág principal*/
-.main-content{
-    background-color: rgb(136, 118, 94);
-}
-.container-features{
+.container-features {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     padding: 3rem 1rem;
 }
-.card-feature{
+
+.card-feature {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -348,4 +183,69 @@ body{
     border-radius: 1rem;
     padding: 1.5rem 0;
     width: 15rem;
+}
+/* Background para o Rodapé */
+.footer {
+    background-size: cover;
+    background-position: center;
+    color: #f5f5f5; /* Branco suave */
+    padding: 2rem 0;
+}
+
+/* Estilização das seções dentro do rodapé */
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Dourado */
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFD700; /* Linha dourada abaixo do título */
+    padding-bottom: 0.5rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f5f5f5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #FFD700; /* Dourado */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFA500; /* Laranja */
+}
+
+.footer-section .contact-us p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-section .contact-us p i {
+    color: #FFD700; /* Dourado */
+    font-size: 1.2rem;
 }
