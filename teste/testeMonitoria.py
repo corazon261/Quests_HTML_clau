@@ -9,9 +9,9 @@ precos_itens = [20.00, 8.50, 5.75, 25.90, 4.30]
 print("Preços originais:")
 for i in range(len(nomes_itens)):
     print(f"{nomes_itens[i]}: R$ {precos_itens[i]}")
+inf = float(input())
+aplicar_inflacao(nomes_itens, precos_itens, inf)
 
-aplicar_inflacao(nomes_itens, precos_itens, 10)
-
-print("\nPreços após inflação de 10%:")
+print("\nPreços após inflação de ",inf," %")
 for i in range(len(nomes_itens)):
     print(f"{nomes_itens[i]}: R$ {precos_itens[i]}")
