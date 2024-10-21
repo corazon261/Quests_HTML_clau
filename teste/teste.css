@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ;
+    background-color:black;
 }
 
 .container {
@@ -248,4 +248,128 @@ body {
 .footer-section .contact-us p i {
     color: #FFD700; /* Dourado */
     font-size: 1.2rem;
+}
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.card-product{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(200, 196, 196);
+}
+.container-img{
+    position: relative;
+}
+.container-img img{
+    width: 100%;
+}
+.container-img img{
+    position: relative;
+}
+.container-img .discount{
+    position: absolute;
+    left: 0;
+    background-color: #f4b4ac;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+}
+.card-product:hover .discount{
+    background-color: #000;
+}
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all 0,4s ease
+    ;
+}
+.button-group span{
+    border: 1px solid #a25a09;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.button-group span:hover{
+    background-color: #000;
+    color: #7c414120;
+}
+.button-group span i{
+    font-size: 1rem;
+    color: #f4b46c;
+}
+.card-product:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+}
+.button-group span:hover i{
+    color: #fff;
+}
+.content-card-product{
+    display: flex;
+    justify-items: center
+}
+.stairs{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+.stairs i{
+    font-size: 1.3rem;
+    color: #eee667;
+}
+.content-card-product h3{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.add-cart{
+    justify-self: start;
+    border: 2px solid #f4b46c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-cart:hover{
+    background-color: #74614c;
+}
+.add-cart i{
+    font-size: 1.5rem;
+    color: #f4b46c;
+}
+.add-cart:hover i{
+    color: #777;
+}
+.content-card-product.price{
+    justify-self: end;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.content-card-product .price span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #000;
+    margin-left: 0.5rem;
 }

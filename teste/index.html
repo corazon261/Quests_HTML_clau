@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Padoca do Xúlio</title>
+    <title>Baristas</title>
     <script src="https://kit.fontawesome.com/40f99b97e8.js" crossorigin="anonymous"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='teste.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
+
 <body>
-    
-    <!-- Início do Cabeçalho -->
+
+    <!--Inicio Cabeçalho-->
     <header>
         <div class="container-hero">
             <div class="container hero">
-                <!-- Caixa Suporte ao Cliente -->
-                <div class="customer-support">
+                <!--Caixa suporte ao Cliente-->
+                <div class="costumer-support">
                     <i class="fa-solid fa-headset"></i>
-                    <div class="content-customer-support">
+                    <div class="content-costumer-support">
                         <span class="text">Suporte ao Cliente</span>
                         <span class="number">+55 (11) 2335-7654</span>
                     </div>
                 </div>
-                
-                <!-- Caixa Logo -->
+
+                <!--Caixa Logo-->
                 <div class="container-logo">
                     <i class="fa-solid fa-mug-hot"></i>
                     <h1>
-                        <a href="index.html">Padoca do Xúlio</a>
+                        <a href="index.html">Barista</a>
                     </h1>
                 </div>
 
-                <!-- Caixa Usuário e Carrinho -->
+                <!--Caixa Usuário-->
                 <div class="container-user">
                     <i class="fa-solid fa-user"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -45,8 +44,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Menu de Navegação -->
+        <!--NavBar - Menu de Navegação-->
         <div class="container-navbar">
             <nav class="navbar container">
                 <ul class="menu">
@@ -63,64 +61,68 @@
                         <a href="#">Contato</a>
                     </li>
                 </ul>
-                
-                <!-- Campo de Pesquisa -->
-                <form class="search-form" role="search">
-                    <input type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
-                    <button type="submit" class="btn-search" aria-label="Buscar">
+                <!--Campo de Pesquisa-->
+                <form class="search-form">
+                    <!--Campo de texto para pesquisar-->
+                    <input type="search" placeholder="Pesquisar...">
+                    <!--Botão de pesquisar com o ícone de lupa-->
+                    <button class="btn-search">
+                        <!--Ícone de pesquisa - Lupa-->
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
+                <!--Fim formulário-->
             </nav>
         </div>
     </header>
-    <!-- Fim do Cabeçalho -->
+    <!--Fim do Cabeçalho-->
 
-    <!-- Banner -->
-    <section class="banner">
+    <!--Inicio Banner-->
+    <div class="banner">
         <div class="content-banner">
-            <p>Diamba</p>
-            <h2>100% Natural e <b>Fresquinha</b></h2>
-            <a href="#" class="btn-primary">Comprar Agora</a>
+            <p>Café Delicioso</p>
+            <h2>100% Natural <b>Café Fresco</b></h2>
+            <a href="#">Comprar Agora</a>
         </div>
-    </section>
-    <!-- Fim do Banner -->
+    </div>
 
-    <!-- Conteúdo Principal -->
+    <!--Conteúdo Principal-->
     <main class="main-content">
         <div class="container container-features">
+            <!--Primeito Card (Aviao)-->
             <div class="card-feature">
-                <i class="fa-solid fa-shipping-fast"></i>
+                <i class="fa-solid fa-plane-up"></i>
                 <div class="feature-content">
-                    <span>Enviamos diretamente para sua casa</span>
-                    <p>Pedidos a partir de R$50</p>
+                    <span>Enviamos para todo o Estado</span>
+                    <p>Em pedidos acima de R$ 10.000</p>
                 </div>
             </div>
-
+            <!--Segundo Card (Reembolso)-->
             <div class="card-feature">
                 <i class="fa-solid fa-wallet"></i>
                 <div class="feature-content">
-                    <span>Pagamento Seguro</span>
-                    <p>Transações protegidas e confiáveis</p>
+                    <span>Reembolsos</span>
+                    <p>100% de garantia do seu dinheito de volta</p>
                 </div>
             </div>
-
+            <!--Terceiro Card (Vale Presente)-->
             <div class="card-feature">
                 <i class="fa-solid fa-gift"></i>
                 <div class="feature-content">
-                    <span>Bônus a partir de 3 compras</span>
-                    <p>Promoções imperdíveis</p>
+                    <span>Vale Presente Especial</span>
+                    <p>Oferta de Bonus Diferentes</p>
                 </div>
             </div>
-            
+            <!--Quarto Card (Serviços)-->
             <div class="card-feature">
                 <i class="fa-solid fa-headset"></i>
                 <div class="feature-content">
-                    <span>Atendimento ao Cliente</span>
-                    <p>Suporte dedicado e rápido</p>
+                    <span>Serviço ao Cliente 24 horas</span>
+                    <p>Colocar WhatsApp e Telefone</p>
                 </div>
             </div>
         </div>
+        <!--Fim Cards-->
 
         <div class="container top-products">
             <h1 class="heading-1">Melhores Produtos</h1>
@@ -129,7 +131,7 @@
                 <!--Produto 1-->
                 <div class="card-product">
                     <div class="container-img">
-                        <img src="img/images.png" alt="Falha para carregar a imagem">
+                        <img src="img/cafe-irish.jpg" alt="Falha para carregar a imagem">
                         <span class="discount">-15%</span>
                         <div class="button-group">
                             <span>
@@ -260,66 +262,9 @@
                 </div>
             </div>
         </div>
+
     </main>
-    <!-- Fim do Conteúdo Principal -->
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container container-footer">
-            <div class="menu-footer">
-                <div class="contact-info">
-                    <p class="title-footer">Informações de contato</p>
-                    <ul>
-                        <li>Rua Bruto, 51</li>
-                        <li>Tel (xx) x xxxx-xxxx</li>
-                        <li>email: xxxxxxxxxxxx@gmail.com</li>
-                    </ul>
-                    <div class="social-icons">
-                        <span class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-
-                        <span class="youtube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-
-                        <span class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="information">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-         <div class="container-footer">
-            <div class="footer-content container">
-                <div class="footer-section about">
-                    <h3>Sobre Nós</h3>
-                    <p>Na Padoca do Xúlio, oferecemos os melhores pães e doces artesanais com ingredientes de alta qualidade.</p>
-                </div>
-                <div class="footer-section links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Serviço</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section contact">
-                    <h3>Contato</h3>
-                    <p>+55 (11) 2335-7654</p>
-                    <p>email@padocadoxulio.com.br</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Padoca do Xúlio. Todos os direitos reservados.</p>
-            </div>
-        </div> 
-    </footer>
-    <!-- Fim do Rodapé -->
-    
 </body>
+
 </html>
